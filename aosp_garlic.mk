@@ -18,11 +18,12 @@
 $(call inherit-product, device/yu/garlic/full_garlic.mk)
 
 # Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/stag/main.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
-PRODUCT_NAME := stag_garlic
+PRODUCT_NAME := aosp_garlic
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := garlic
+TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
